@@ -21,7 +21,14 @@ repositories {
 dependencies {
 	implementation("org.springframework.boot:spring-boot-starter-data-redis")
 	implementation("org.springframework.boot:spring-boot-starter-websocket")
+	implementation("org.springframework.security:spring-security-messaging")
+	implementation("org.springframework.security:spring-security-config")
+	implementation("org.springframework.security:spring-security-core")
+	implementation("org.springframework.security:spring-security-web")
 	implementation("org.jetbrains.kotlin:kotlin-reflect")
+	implementation("com.fasterxml.jackson.module:jackson-module-kotlin")
+	implementation("com.fasterxml.jackson.datatype:jackson-datatype-jsr310")
+
 	testImplementation("org.springframework.boot:spring-boot-starter-test")
 }
 
