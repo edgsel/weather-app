@@ -17,6 +17,7 @@ class WebSocketConfig : WebSocketMessageBrokerConfigurer {
     fun heartBeatScheduler() : TaskScheduler {
         return ThreadPoolTaskScheduler()
     }
+
     override fun configureMessageBroker(registry: MessageBrokerRegistry) {
         registry.enableSimpleBroker(BROKER_DESTINATION_PREFIX)
             .setHeartbeatValue(longArrayOf(5000, 5000))
