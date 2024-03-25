@@ -9,7 +9,6 @@ import java.time.LocalDateTime
 @Controller
 class HealthCheckController {
 
-
     @Throws(Exception::class)
     @MessageMapping("/hello")
     @SendTo("/topic/greetings")
